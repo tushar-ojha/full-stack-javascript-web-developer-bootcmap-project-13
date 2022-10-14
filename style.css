@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+img {
+    width: 100px;
+}
+
+header {
+    color: white;
+    background-color: #7030cc;
+    padding: 2%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-container {
+    width: 7%;
+    display: inline-block;
+}
+
+nav {
+    vertical-align: top;
+    margin-left: 30%;
+    display: inline-block;
+    width: 60%;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-items button {
+    background-color: #1bbcef;
+    border: none;
+    padding: 5px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.nav-items button:hover {
+    cursor: pointer;
+}
+
+/* navigation section done */
+
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header-text-container {
+    padding-top: 5%;
+    width: 48%;
+}
+
+.header-heading {
+    font-size: 4vw;
+}
+
+.header-image-container {
+    width: 48%;
+}
+
+.header-image-container img {
+    width: 90%;
+}
+/* Header section completed here */
+
+section {
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left-image-container {
+    width: 50%;
+}
+
+.left-image-container img {
+    width: 100%;
+}
+
+.right-content-container {
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.content {
+    margin: 10%;
+}
+/* second section completed */
+
+
+/* last section starts here */
+.last-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.last-section-heading-container {
+    margin-bottom: 5%;
+}
+
+.card {
+    width: 300px;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px grey;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 1px 5px 12px grey;
+}
+
+.card div h4 {
+    display: inline-block;
+    margin-left: 30%;
+
+}
+
+.card div p {
+    display: inline-block;
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 720px) {
+    .logo-container {
+        display: none;
+    }
+
+    nav {
+        border: solid 1px red;
+        width: 95%;
+        margin-left: 1%;
+    }
+}
+
+
+
+
+
+/* Code for mobile screen nav-bar */
+.bars{
+    display: none;
+    color: white;
+    margin: 0; 
+    margin-right: 5%;
+   
+}
+
+.bars i {
+    font-size: 2rem;
+} 
+
+.dropdown-list {
+    z-index: 1;
+    margin: 0;
+    display: none;
+    background-color:#7030cc;
+    box-shadow: 0px 4px 8px 1px #535547;
+} 
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%; 
+}
+
+.dropdown-list:hover .nav-menu {
+    display: block;
+    border: solid 2px red;
+}
+
+.no-list-style {
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-weight: 0.9rem;
+}
+
+.no-list-style li a {
+    color: white;
+    text-decoration: none;
+}
+.no-list-style li a:hover {
+    border-bottom: solid 1px lightgray;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+@media only screen  and (max-width: 500px) {
+
+    nav {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    } 
+
+    .bars {
+        color: white;
+        margin: 0;
+        margin-right: 5%;
+        display: block;
+    }
+    .bars i {
+        font-size: 2rem;
+    }
+}
